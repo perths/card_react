@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  display: flex;
   min-height: 100vh;
+}
+
+.card-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: linear-gradient(169.47deg,
+      rgba(4, 31, 27, 0.98) 14.76%,
+      #380C4A 25.62%,
+      #3B0E46 29.25%,
+      #3D0F42 33.37%,
+      #441436 40.15%,
+      #33254E 46.18%,
+      #2B2D59 52.47%,
+      #292654 57.59%,
+      #271F4F 62.33%,
+      #240D37 74.06%,
+      #22052D 88.22%,
+      #22052D 125.39%,
+      #22052D 154.65%,
+      #22052D 154.67%);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

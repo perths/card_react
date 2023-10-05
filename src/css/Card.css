@@ -1,0 +1,162 @@
+.card-front-div {
+    transform: translateX(6rem);
+    width: clamp(20rem,30vw,30rem);
+    position: relative;
+    overflow: hidden;
+    height:min(18rem,38vh);
+    background: linear-gradient(
+        rgba(98, 63, 242, 1),
+        rgba(94, 55, 236, 1)
+    );
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+}
+
+.circles-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.circle-filled {
+    background-color: #FFFFFF;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+.circle-empty {
+    border: 1.5px solid #FFFFFF;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+}
+
+.ellipses-div div {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(2rem);
+}
+
+.ellipse-one {
+    height: clamp(18rem,20vh,20rem);
+    width: clamp(10rem,10vw,12rem);
+    bottom: 0;
+    left: 0;
+    transform: translateX(2rem) translateY(-2rem) rotate(15deg);
+    background-color: #5E90E6;
+}
+
+.ellipse-two {
+    height: clamp(18rem,20vh,20rem);
+    width: clamp(10rem,10vw,12rem);
+    bottom: 0;
+    left: 20%;
+    transform: translateX(5rem) translateY(5rem) rotate(55deg);
+    border-radius: 90%;
+    background-color: #6328C0;
+}
+
+.ellipse-three {
+    height: clamp(18rem,20vh,20rem);
+    width: clamp(10rem,10vw,12rem);
+    top: 0;
+    right: 0;
+    transform: translateX(1rem) translateY(0rem) rotate(135deg);
+    border-radius: 50%;
+    background-color: #BA20A6;
+}
+
+.card-number-div {
+    font-size: clamp(1.2rem,2vw,2.4rem);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 3rem;
+    letter-spacing: 0.17rem;
+    color: #FFFFFF;
+}
+
+.card-number-div p {
+    margin-bottom: 0.6rem;
+}
+
+.name-date-div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.card-back-div {
+    background: linear-gradient(106.8deg, #FFFFFF 0%, #D9D9D9 103.94%);
+    transform: translateX(14rem);
+    width: clamp(20rem,30vw,30rem);
+    height: min(18rem,38vh);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 3rem;
+    padding: 2rem 0;
+}
+
+.mag-strap-div {
+    height: 3rem;
+    background-color: black;
+}
+
+.card-cvc-div {
+    background-color: #ADB6BF;
+    height: 2rem;
+    margin: 2rem 3rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card-cvc-div p {
+    letter-spacing: 0.25rem;
+}
+
+.lines-div {
+    height: 4rem;
+    margin: 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.upper-div, .middle-div,.lower-div {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.upper-div div, .middle-div div,.lower-div div {
+    border: 3px solid #AEB5BD;;
+    border-radius: 4px;
+}
+
+.upper-div .line-one { flex-grow: 7; }
+.upper-div .line-two { flex-grow: 1.5; }
+.upper-div .line-three { flex-grow: 1.5; }
+.upper-div .line-four { flex-grow: 0.5; }
+
+.middle-div .line-one { flex-grow: 2; }
+.middle-div .line-two { flex-grow: 5; }
+.middle-div .line-three { flex-grow: 4; }
+.middle-div .line-four { flex-grow: 1; }
+
+.lower-div .line-one { flex-grow: 1; }
+.lower-div .line-two { flex-grow: 1.5; }
+.lower-div .line-three { flex-grow: 1.5; }
+.lower-div .line-four { flex-grow: 7; }

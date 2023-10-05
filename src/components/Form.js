@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../css/Form.css'
 import PropTypes from 'prop-types';
 
-const Form = ({ formInputs, setFormInputs, setUpdateCard }) => {
+const Form = ({ formInputs, setFormInputs, setCard }) => {
     const currentYear = (new Date().getFullYear().toString()).substring(2);
     const currentMonth = (new Date().getMonth()) + 1;
 
@@ -90,14 +90,14 @@ const Form = ({ formInputs, setFormInputs, setUpdateCard }) => {
         event.preventDefault();
         const validationResult = validation();
         if (validationResult) {
-            setUpdateCard(true);
+            setCard(true);
         }
     }
 
     return (
         <form className='card-details-form'>
             <div>
-                <label htmlFor='holder-name'>CARDHOLDER NAME:</label>
+                <label htmlFor='holder-name'>CARDHOLDER NAME</label>
                 <input
                     type='text' placeholder='ex. Jane Appleseed'
                     name='holder-name' id='holder-name'
