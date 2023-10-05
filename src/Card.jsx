@@ -1,4 +1,4 @@
-import '../css/card.css';
+import './card.css';
 import PropTypes from 'prop-types';
 
 const Card = ({ formInputs, card }) => {

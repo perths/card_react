@@ -1,4 +1,4 @@
-import '../css/success.css'
+import './success.css'
 import PropTypes from 'prop-types';
 
 const Success = ({ setFormInputs, setCard }) => {
