@@ -1,7 +1,8 @@
-import './css/App.css';
+import './css/app.css';
 import { useState } from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
+import Success from './components/Success';
 
 const App = () => {
   const [formInputs, setFormInputs] = useState({
@@ -20,7 +21,12 @@ const App = () => {
         <Card formInputs={formInputs} card={card} />
       </div>
       <div className='form-div'>
-        <Form formInputs={formInputs} setFormInputs={setFormInputs} setCard={setCard} />
+        {
+          card ?
+            <Success setFormInputs={setFormInputs} setCard={setCard} />
+            :
+            <Form formInputs={formInputs} setFormInputs={setFormInputs} setCard={setCard} />
+        }
       </div>
     </div>
   );
