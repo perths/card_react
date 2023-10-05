@@ -1,0 +1,38 @@
+.success-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5rem;
+}
+
+.success-div h3 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.success-div p {
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: #BBB9BC;
+    margin-top: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.success-div button {
+    min-width: 25vw;
+    padding: 1rem 0;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: #220930;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.success-div button:hover {
+    background-color: black;
+}

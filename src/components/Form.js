@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../css/Form.css'
+import '../css/form.css'
 import PropTypes from 'prop-types';
 
 const Form = ({ formInputs, setFormInputs, setCard }) => {
