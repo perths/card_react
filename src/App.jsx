@@ -1,8 +1,8 @@
 import './app.css';
 import { useState } from 'react';
-import Form from './components/Form';
-import Card from './components/Card';
-import Success from './components/Success';
+import Form from './Form';
+import Card from './Card';
+import Success from './Success';
 
 const App = () => {
   const [formInputs, setFormInputs] = useState({
